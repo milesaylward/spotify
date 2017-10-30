@@ -1,0 +1,38 @@
+
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+page_gen:
+  - data: 'Email-1A'
+    template: 'Email-1A-Template'
+    name: 'Country-Code'
+    dir: 'Email-1A'
+  - data: 'Email-2A'
+    template: 'Email-2A-Template'
+    name: 'Country-Code'
+    dir: 'Email-2A'
+  - data: 'Email-3A'
+    template: 'Email-3A-Template'
+    name: 'Country-Code'
+    dir: 'Email-3A'
+  - data: 'Email-4A'
+    template: 'Email-4A-Template'
+    name: 'Country-Code'
+    dir: 'Email-4A'
+  - data: 'Email-5A'
+    template: 'Email-5A-Template'
+    name: 'Country-Code'
+    dir: 'Email-5A'

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="main.css">
+<h1 class="header">Spotify Localization</h1>
+<div class="home">
+  <ul class="post-list">
+    <h3>Email-1A</h3>
+    {% for country in site.data.Email-1A %}
+      <li>
+        <h5>
+          <a class="post-link" href="/Email-1A/{{ country.Country-Code | datapage_url: Global-Emails }}">{{country.Language}}</a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="post-list">
+    <h3>Email-2A</h3>
+    {% for country in site.data.Email-2A %}
+      <li>
+        <h5>
+          <a class="post-link" href="/Email-2A/{{ country.Country-Code | datapage_url: Global-Emails }}">{{country.Language}}</a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="post-list">
+    <h3>Email-3A</h3>
+    {% for country in site.data.Email-3A %}
+      <li>
+        <h5>
+          <a class="post-link" href="/Email-3A/{{ country.Country-Code | datapage_url: Global-Emails }}">{{country.Language}}</a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="post-list">
+    <h3>Email-4A</h3>
+    {% for country in site.data.Email-4A %}
+      <li>
+        <h5>
+          <a class="post-link" href="/Email-4A/{{ country.Country-Code | datapage_url: Global-Emails }}">{{country.Language}}</a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="post-list">
+    <h3>Email-5A</h3>
+    {% for country in site.data.Email-5A %}
+      <li>
+        <h5>
+          <a class="post-link" href="/Email-5A/{{ country.Country-Code | datapage_url: Global-Emails }}">{{country.Language}}</a>
+        </h5>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

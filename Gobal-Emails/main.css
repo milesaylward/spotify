@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+}
+.home {
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: black;
+}
+a:visited {
+  color: inherit;
+}

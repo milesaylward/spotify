@@ -1,0 +1,240 @@
+@font-face {
+  font-family: 'CircularStd-Book';
+  src: url('https://spotify-welcome.storage.googleapis.com/stage/2017-07-10/fonts/CircularStd-Book.eot');
+  src: url('https://spotify-welcome.storage.googleapis.com/stage/2017-07-10/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+       url('https://spotify-welcome.storage.googleapis.com/stage/2017-07-10/fonts/CircularStd-Book.woff') format('woff'),
+       url('https://spotify-welcome.storage.googleapis.com/stage/2017-07-10/fonts/CircularStd-Book.ttf') format('truetype'),
+       url('https://spotify-welcome.storage.googleapis.com/stage/2017-07-10/fonts/CircularStd-Book.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'CircularStd-Book',Circular,'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  height: auto;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  text-decoration: none;
+  font-size: 0px;
+  line-height: 0px;
+}
+table {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+table, tbody, tr, td {
+  border-collapse: collapse;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+div.wrapper {
+  background-color: #FFFFFF;
+  width: 100%;
+  max-width: 768px;
+  margin: 0px auto;
+  outline: 1px solid #E8E8E8;
+}
+div.welcome-description {
+  width: 90% !important;
+}
+
+td.body-copy {
+  font-family: 'CircularStd-Book',Circular,'Helvetica Neue',Helvetica,Arial,sans-serif !important;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+}
+td.blue-copy {
+  color: #2D49B3;
+}
+td.white-copy {
+  color: #FFFFFF;
+  padding: 0 14px;
+}
+td.bottom-text-td {
+  font-size: 0px;
+  line-height: 0px;
+}
+td.spacer {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+td.bg-image {
+  background-repeat: no-repeat;
+  background-size: 625px;
+}
+
+img.bottom-graphic {
+  width: 100%;
+  max-width: 320px;
+}
+
+a.linked-image {
+  border-collapse: collapse;
+  display: block;
+  height: auto;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  /*text-decoration: none;*/
+  font-size: 0px;
+  line-height: 0px;
+}
+a.button {
+  background-color: #2D49B3;
+  border-radius: 50px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'CircularStd-Book',Circular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  -webkit-text-size-adjust: none;
+}
+
+/* Button Language Resizing */
+
+body.FR a.button, body.CA-FR a.button {
+  width: 275px;
+}
+
+body.ID a.button,
+body.ES419 a.button,
+body.ES a.button,
+body.IT a.button {
+  width: 225px;
+}
+
+
+
+table.border-show td {
+  outline: solid 1px black;
+}
+
+
+/* Media Query */
+td.fluid {
+  font-size: 0px;
+  line-height: 0px;
+}
+td.fixed {
+  width: 640px;
+}
+td.no-text {
+  font-size: 0px;
+  line-height: 0px;
+}
+
+@media screen and (max-width:641px) {
+
+  table.table-header {
+    background-color: transparent !important;
+  }
+  table.table-red-content {
+    background-color: transparent !important;
+  }
+
+  td.fixed {
+    width: 100% !important;
+  }
+  td.fixed-footer {
+    /*max-width: 320px !important;*/
+    width: 100% !important;
+  }
+
+  td.body-copy {
+    font-size: 13px !important;
+    line-height: normal !important;
+  }
+  td.blue-copy {
+    /*font-size: 16px !important;*/
+  }
+  td.white-copy {
+    font-size: 12px !important;
+    padding: 0px 10px !important;
+  }
+
+  td.welcome-spacer {
+    height: 30px !important;
+  }
+  td.line-red-side {
+    height: 0px !important;
+  }
+
+  td.bottom-spacer {
+    height: 8px !important;
+  }
+  td.red-table-spacer {
+    height: 30px !important;
+  }
+  td.end-spacer {
+    height: 30px !important;
+  }
+
+  a.button {
+    line-height: 40px !important;
+    width: 70% !important;
+  }
+
+  img.title-welcome {
+    width: 237px !important;
+  }
+  img.title-welcome-1A-B {
+    width: 237px !important;
+  }
+  img.bottom-graphic {
+    width: 100% !important;
+  }
+  img.bottom-title {
+    width: 100% !important;
+  }
+
+  br {
+    display: none !important;
+  }
+
+}
+
+
+/* Gmail download hovers */
+* img[tabindex="0"]+div {
+  display: none !important;
+}
+
+
+/* iOS blue links */
+.appleBody a,
+.appleFooter a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
